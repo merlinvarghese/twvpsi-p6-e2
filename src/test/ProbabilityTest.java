@@ -39,4 +39,10 @@ class ProbabilityTest {
         Probability flipCoinHead = new Probability(0.7);
         assertFalse(flipCoinHead.equals(null));
     }
+    @Test
+    void expect1By12ForCombiningTwoProbabilityEvent() {
+        Probability flipCoinHead = new Probability(1.0/2);
+        Probability throwDiceSix = new Probability(1.0/6);
+        assertEquals(0.08333,flipCoinHead.combinedProbability(throwDiceSix), 001);
+    }
 }

@@ -21,4 +21,8 @@ class Probability {
     public int hashCode() {
         return Objects.hashCode(this);
     }
+
+    double combinedProbability(Probability throwDiceSix) {
+        return this.occurrence * throwDiceSix.occurrence;
+    }
 }
