@@ -1,13 +1,12 @@
-// understands chances of occurance of an event
- class Probability{
-    double occurance;
+// understands chances of occurrence of an event
+class Probability {
+    private double occurrence;
 
-    Probability(double occurance) {
-        this.occurance = occurance;
+    Probability(double occurrence) {
+        this.occurrence = occurrence;
     }
+
     boolean compare(Probability event2) {
-        if(this.occurance == event2.occurance)
-            return true;
-        return false;
+        return this.occurrence == event2.occurrence;
     }
 }
